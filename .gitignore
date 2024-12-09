@@ -1,0 +1,70 @@
+# Python-specific
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+ENV/
+.VENV/
+*.env
+*.venv
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# Django-specific
+db.sqlite3
+*.log
+media/
+staticfiles/
+*.pot
+*.pyc
+.migrations/
+
+# Node.js (if using npm/yarn for frontend assets)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Testing-related
+.pytest_cache/
+.tox/
+.local/
+celerybeat-schedule
+
+# Deployment-related
+*.pid
+*.sock
+*.seed
+*.key
+
+# Security
+secrets.json
+*.pem
+
+# Custom
+*.DS_Store
+*.iml
+*.sqlite3
+*.orig
+*.log
