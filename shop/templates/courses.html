@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} ITCourseMarket {% endblock %}
+{% block content %}
+    <h2 class="text-2xl font-bold text-center mb-6 uppercase">Course Catalog</h2>
+
+    <div class="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Students Quantity</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for course in courses %}
+                <tr>
+                    <td>{{ course.title }}</td>
+                    <td>{{ course.catagory }}</td>
+                    <td>${{ course.price }}</td>
+                    <td>{{ course.students_qty }}</td>
+                    <td>
+                        <button class="btn">Buy</button>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
