@@ -29,6 +29,8 @@ staticfiles/
 *.pot
 *.pyc
 .migrations/
+*/migrations/
+
 
 # Node.js (if using npm/yarn for frontend assets)
 node_modules/
