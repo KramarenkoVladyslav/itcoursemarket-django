@@ -15,7 +15,7 @@ class Course(models.Model):
     price = models.FloatField()
     students_qty = models.IntegerField()
     reviews_qty = models.IntegerField()
-    catagory = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     created_at = models.DateTimeField(default=timezone.now)
 
     def __str__(self):

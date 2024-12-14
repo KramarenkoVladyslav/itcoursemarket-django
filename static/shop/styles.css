@@ -5,6 +5,7 @@ body {
     line-height: 1.6;
 }
 
+
 .table-container {
     overflow-x: auto;
     border-radius: 8px;
@@ -75,6 +76,16 @@ tbody tr:nth-child(even) {
 .btn:hover {
     background-color: #44B78B;
     transform: translateY(-2px);
+}
+
+.title_link {
+    text-decoration: underline;
+    color: #0c4b33;
+    transition: color 0.3s;
+}
+
+.title_link:hover {
+    color: #44B78B;
 }
 
 @media (max-width: 576px) {

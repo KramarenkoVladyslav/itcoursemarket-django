@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ course.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="container mx-auto py-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">{{ course.title }}</h2>
+            <p class="text-gray-600 mb-2"><strong>Category:</strong> {{ course.category }}</p>
+            <p class="text-gray-600 mb-2"><strong>Price:</strong> ${{ course.price }}</p>
+            <p class="text-gray-600 mb-2"><strong>Students Quantity:</strong> {{ course.students_qty }}</p>
+            <p class="text-gray-600 mb-2"><strong>Reviews Quantity:</strong> {{ course.reviews_qty }}</p>
+
+            <div class="flex items-center justify-between">
+                <a href="{% url "shop:index" %}" class="text-blue-500 hover:underline">Back to Courses</a>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
