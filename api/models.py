@@ -1,10 +1,10 @@
 from tastypie.resources import ModelResource
 from shop.models import Category, Course
 
-class CaregoryResource(ModelResource):
+class CategoryResource(ModelResource):
     class Meta:
         queryset = Category.objects.all()
-        resource_name = 'caregories'
+        resource_name = 'categories'
         allowed_methods = ['get']
 
 class CourseResource(ModelResource):
