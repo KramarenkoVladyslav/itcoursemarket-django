@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop.apps.ShopConfig',
     'api.apps.ApiConfig',
+    'tastypie'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,19 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Безпека для локального середовища
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+# Налаштування CORS
+INSTALLED_APPS += [
+    'corsheaders',
+]
+
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    *MIDDLEWARE,
+]
+
+CORS_ALLOW_ALL_ORIGINS = True  # Для розробки
+
