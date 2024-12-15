@@ -88,6 +88,12 @@ tbody tr:nth-child(even) {
     color: #44B78B;
 }
 
+.nav_link {
+    text-decoration: underline;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
 @media (max-width: 576px) {
     table {
         font-size: 0.9rem;
