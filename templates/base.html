@@ -11,6 +11,20 @@
     {% load static %}
     <link href="{% static 'shop/styles.css' %}" rel="stylesheet">
     <title>{% block title %} {% endblock %}</title>
+    <!-- For all browsers-->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicons/favicon-16x16.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'favicons/favicon.ico' %}">
+
+    <!-- Android Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'favicons/android-chrome-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="512x512" href="{% static 'favicons/android-chrome-512x512.png' %}">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="{% static 'favicons/apple-touch-icon.png' %}">
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="{% static 'favicons/site.webmanifest' %}">
 </head>
 <body>
 <nav class="text-white shadow-lgc">
