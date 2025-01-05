@@ -70,3 +70,5 @@ secrets.json
 *.sqlite3
 *.orig
 *.log
+
+Icon
